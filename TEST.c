@@ -29,7 +29,11 @@ void C_PROJECT1()
 	unsigned char	temp,*ptr_byte;
 
 		if (open_port1(&Port1))
-		{	
+			{
+			close_port1();
+			return;	
+			}
+			
 	ptr_byte=Port1.PtrPort;
 	*ptr_byte++=0x0A;		//Адрес Slave
 	*ptr_byte++=0x03;		//Номер функции
@@ -55,10 +59,5 @@ void C_PROJECT1()
 		close_port1();
 		return;
 		}
-		}
-		else
-			{
-			close_port1();
-			return;
-			}
 	}
+
