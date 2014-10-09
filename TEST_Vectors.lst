@@ -1,4 +1,4 @@
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE  1
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -57,7 +57,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                             --------------
                       00005 ;-------------------------------------------------------------------------------------------------------
                             --------------
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE  2
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -116,7 +116,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00076 
                       00077 ;****************************************************************************************
                       00078 
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE  3
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE  3
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -175,7 +175,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00101         EGOTO   C_PROJECT1
                           M 
   0000                    M         EXTERN  C_PROJECT1
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE  4
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE  4
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -186,15 +186,15 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00102 
 00C01C                00103 ID_USER_APP
                       00104 ;«десь записываетс€ верси€ приложени€ пользовател€
-00C01C 4554 5453 3020 00105         DB      "TEST 0.2",H'00'
-       322E 0000 
+00C01C 4554 5453 3020 00105         DB      "TEST 0.3",H'00'
+       332E 0000 
                       00106 
                       00107 EE_ID_VECT      CODE    H'F00014'
                       00108 
 F00014 ???? 00??      00109         DB      LOW ID_USER_APP,HIGH ID_USER_APP,UPPER ID_USER_APP
                       00110 
                       00111         END
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE  5
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE  5
 
 
 SYMBOL TABLE
@@ -253,7 +253,7 @@ C                                 00000000
 C1INV                             00000004
 C1OUT_CMCON                       00000006
 C1OUT_PORTF                       00000002
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE  6
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE  6
 
 
 SYMBOL TABLE
@@ -312,7 +312,7 @@ CCP5IE                            00000002
 CCP5IF                            00000002
 CCP5IP                            00000002
 CCP5M0                            00000000
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE  7
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE  7
 
 
 SYMBOL TABLE
@@ -371,7 +371,7 @@ CVREF_PORTF                       00000005
 CVREN                             00000007
 CVROE                             00000006
 CVRR                              00000005
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE  8
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE  8
 
 
 SYMBOL TABLE
@@ -430,7 +430,7 @@ ERR_ADR                           00000002
 ERR_BUSY                          00000006
 ERR_DATA                          00000003
 ERR_DEVICE                        00000004
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE  9
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE  9
 
 
 SYMBOL TABLE
@@ -489,7 +489,7 @@ INT1IP                            00000006
 INT1P                             00000006
 INT2                              00000002
 INT2E                             00000004
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE 10
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE 10
 
 
 SYMBOL TABLE
@@ -548,7 +548,7 @@ LATC2                             00000002
 LATC3                             00000003
 LATC4                             00000004
 LATC5                             00000005
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE 11
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE 11
 
 
 SYMBOL TABLE
@@ -607,7 +607,7 @@ LVV2                              00000002
 LVV3                              00000003
 MCU_TYPE                          00000001
 N                                 00000004
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE 12
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE 12
 
 
 SYMBOL TABLE
@@ -666,7 +666,7 @@ PIE2                              00000FA0
 PIE3                              00000FA3
 PIR1                              00000F9E
 PIR2                              00000FA1
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE 13
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE 13
 
 
 SYMBOL TABLE
@@ -725,7 +725,7 @@ RB1                               00000001
 RB2                               00000002
 RB3                               00000003
 RB4                               00000004
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE 14
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE 14
 
 
 SYMBOL TABLE
@@ -784,7 +784,7 @@ RE4                               00000004
 RE5                               00000005
 RE6                               00000006
 RE7                               00000007
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE 15
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE 15
 
 
 SYMBOL TABLE
@@ -843,7 +843,7 @@ SREN1                             00000005
 SREN2                             00000005
 SS                                00000007
 SSPADD                            00000FC8
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE 16
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE 16
 
 
 SYMBOL TABLE
@@ -902,7 +902,7 @@ T2CKPS0                           00000000
 T2CKPS1                           00000001
 T2CON                             00000FCA
 T2OUTPS0                          00000003
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE 17
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE 17
 
 
 SYMBOL TABLE
@@ -961,7 +961,7 @@ TMR3L                             00000FB2
 TMR3ON                            00000000
 TMR4                              00000F78
 TMR4IE                            00000003
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE 18
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE 18
 
 
 SYMBOL TABLE
@@ -1020,7 +1020,7 @@ TRISE5                            00000005
 TRISE6                            00000006
 TRISE7                            00000007
 TRISF                             00000F97
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE 19
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE 19
 
 
 SYMBOL TABLE
@@ -1079,7 +1079,7 @@ VCFG1                             00000005
 VREFM                             00000002
 VREFP                             00000003
 W                                 00000000
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE 20
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE 20
 
 
 SYMBOL TABLE
@@ -1138,7 +1138,7 @@ _CPB_ON_5H                        000000BF
 _CPD_OFF_5H                       000000FF
 _CPD_ON_5H                        0000007F
 _DEBUG_OFF_4L                     000000FF
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE 21
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE 21
 
 
 SYMBOL TABLE
@@ -1197,7 +1197,7 @@ _STVR_OFF_4L                      000000FE
 _STVR_ON_4L                       000000FF
 _WDTPS_128_2H                     000000FF
 _WDTPS_16_2H                      000000F9
-MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:05:40         PAGE 22
+MPASM 5.54                  TEST_VECTORS.ASM   10-9-2014  14:19:02         PAGE 22
 
 
 SYMBOL TABLE

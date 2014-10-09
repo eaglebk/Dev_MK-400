@@ -1,5 +1,5 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Thu Oct 09 14:05:41 2014
+Linker Map File - Created Thu Oct 09 14:19:03 2014
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -46,16 +46,16 @@ Linker Map File - Created Thu Oct 09 14:05:41 2014
            US_APP_VECTORS       code   0x00c000    program   0x000026
                    .cinit    romdata   0x00c100    program   0x000002
          .code_OS_Def_C.o       code   0x00c102    program   0x000246
-             .code_TEST.o       code   0x00c348    program   0x0000a0
-                    .code       code   0x00c3e8    program   0x00000e
-      .romdata_OS_Def_C.o    romdata   0x00c3f6    program   0x000000
-      .idata_OS_Def_C.o_i    romdata   0x00c3f6    program   0x000000
-          .romdata_TEST.o    romdata   0x00c3f6    program   0x000000
-          .idata_TEST.o_i    romdata   0x00c3f6    program   0x000000
+             .code_TEST.o       code   0x00c348    program   0x0000ca
+                    .code       code   0x00c412    program   0x00000e
+      .romdata_OS_Def_C.o    romdata   0x00c420    program   0x000000
+      .idata_OS_Def_C.o_i    romdata   0x00c420    program   0x000000
+          .romdata_TEST.o    romdata   0x00c420    program   0x000000
+          .idata_TEST.o_i    romdata   0x00c420    program   0x000000
                EE_ID_VECT       code   0xf00014    program   0x000004
                 TEMP_BASE      udata   0x000010       data   0x000020
                 MATH_DATA      udata   0x000030       data   0x000009
-                 .tmpdata      udata   0x000039       data   0x000000
+                 .tmpdata      udata   0x000039       data   0x000002
                     PARAM      udata   0x000060       data   0x000020
         .udata_OS_Def_C.o      udata   0x000c00       data   0x000041
             .udata_TEST.o      udata   0x000c41       data   0x000009
@@ -70,9 +70,9 @@ Linker Map File - Created Thu Oct 09 14:05:41 2014
                                Start         End      
                            ---------   ---------      
                             0x00c000    0x00c025      
-                            0x00c100    0x00c3f5      
+                            0x00c100    0x00c41f      
                             0xf00014    0xf00017      
-            800 out of 131352 program addresses used, program memory utilization is 0%
+            842 out of 131352 program addresses used, program memory utilization is 0%
 
 
 
@@ -129,15 +129,15 @@ SYS_UNLOCK_SHARED_RESOURCE   0x000ca0    program     extern C:\Work_Mk\lib4xx\Us
        ___return_lbl00018   0x00c206    program     static                          
        ___return_lbl00019   0x00c226    program     static                          
                    __pa_0   0x00c304    program     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                   __pa_0   0x00c3d4    program     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
+                   __pa_0   0x00c3fe    program     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
                    __pa_1   0x00c312    program     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                   __pa_1   0x00c3e0    program     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
+                   __pa_1   0x00c40a    program     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
                    __pa_2   0x00c32c    program     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                    __pa_3   0x00c33e    program     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-            __zero_memory   0x00c3e8    program     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+            __zero_memory   0x00c412    program     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
   begin_transaction_port1   0x00c254    program     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
   begin_transaction_port2   0x00c2c2    program     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-               clear_loop   0x00c3ee    program     static C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+               clear_loop   0x00c418    program     static C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
               close_port1   0x00c292    program     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
               close_port2   0x00c300    program     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
           get_counter10ms   0x00c1c4    program     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
@@ -521,12 +521,12 @@ get_status_transaction_port2   0x00c2da    program     extern C:\Work_Mk\lib4xx\
                    TXSTA2   0x000f6c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                TXSTA2bits   0x000f6c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                 TXSTAbits   0x000fac       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
-                     Temp   0x000c2d       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                      Temp   0x000c3b       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                     Temp   0x000c38       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                     Temp   0x000c35       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                     Temp   0x000c2d       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                      Temp   0x000c30       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                      Temp   0x000c40       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                     Temp   0x000c35       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                     Temp   0x000c38       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                    WDTCON   0x000fd1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                WDTCONbits   0x000fd1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                      WREG   0x000fe8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
@@ -574,39 +574,40 @@ __get_status_transaction_port2:0   0x000c3e       data     extern C:\Work_Mk\lib
   __set_record_to_arhiv:2   0x000c22       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
              __swap_reg:0   0x000c0a       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
              __swap_reg:1   0x000c0c       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                  __tmp_0   0x000039       data     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
                 data_type   0x000c21       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                   mb_adr   0x000c00       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                    mb_adr   0x000c1f       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                    mb_adr   0x000c0d       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                   mb_adr   0x000c12       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                   mb_adr   0x000c00       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                    mb_adr   0x000c05       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                      num   0x000c04       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                   mb_adr   0x000c12       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                       num   0x000c09       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                      num   0x000c04       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                      num   0x000c22       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                       num   0x000c0c       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                       num   0x000c11       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                       num   0x000c16       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                      num   0x000c22       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+           ptr_PortHeader   0x000c3e       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+           ptr_PortHeader   0x000c2e       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+           ptr_PortHeader   0x000c3c       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+           ptr_PortHeader   0x000c2b       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+           ptr_PortHeader   0x000c39       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
            ptr_PortHeader   0x000c31       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
            ptr_PortHeader   0x000c33       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
            ptr_PortHeader   0x000c36       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-           ptr_PortHeader   0x000c39       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-           ptr_PortHeader   0x000c3c       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-           ptr_PortHeader   0x000c3e       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-           ptr_PortHeader   0x000c2e       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-           ptr_PortHeader   0x000c2b       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                  ptr_buf   0x000c19       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                  ptr_buf   0x000c17       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                  ptr_buf   0x000c14       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                  ptr_buf   0x000c0f       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                  ptr_buf   0x000c0a       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                   ptr_buf   0x000c07       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                   ptr_buf   0x000c02       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                  ptr_buf   0x000c0a       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                  ptr_buf   0x000c19       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                  ptr_buf   0x000c0f       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                  ptr_buf   0x000c17       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                  ptr_buf   0x000c14       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                  ptr_byte   0x000c48       data     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
-                    s_val   0x000c1b       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                     s_val   0x000c1d       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                    s_val   0x000c1b       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                      temp   0x000c47       data     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
-                      val   0x000c23       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                       val   0x000c27       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                      val   0x000c23       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
 
 
 
@@ -696,10 +697,10 @@ get_status_transaction_port2   0x00c2da    program     extern C:\Work_Mk\lib4xx\
                    __pa_2   0x00c32c    program     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                    __pa_3   0x00c33e    program     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                C_PROJECT1   0x00c348    program     extern D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
-                   __pa_0   0x00c3d4    program     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
-                   __pa_1   0x00c3e0    program     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
-            __zero_memory   0x00c3e8    program     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
-               clear_loop   0x00c3ee    program     static C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+                   __pa_0   0x00c3fe    program     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
+                   __pa_1   0x00c40a    program     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
+            __zero_memory   0x00c412    program     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+               clear_loop   0x00c418    program     static C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                     TEMP1   0x000010       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                     TEMP2   0x000011       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                     TEMP3   0x000012       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
@@ -732,10 +733,10 @@ get_status_transaction_port2   0x00c2da    program     extern C:\Work_Mk\lib4xx\
                    TEMP30   0x00002d       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                    TEMP31   0x00002e       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                    TEMP32   0x00002f       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-                  __REMB3   0x000030       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB7   0x000030       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __REMB2   0x000031       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB3   0x000030       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB6   0x000031       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000031       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB5   0x000032       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                   __REMB1   0x000032       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB4   0x000033       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
@@ -745,60 +746,61 @@ get_status_transaction_port2   0x00c2da    program     extern C:\Work_Mk\lib4xx\
                  __AARGB1   0x000036       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB0   0x000037       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                    __AEXP   0x000038       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                     PAR1   0x000060       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+                  __tmp_0   0x000039       data     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
                SHORT_PAR1   0x000060       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                  PTR_PAR1   0x000060       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+                     PAR1   0x000060       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                      PAR2   0x000061       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                SHORT_PAR2   0x000061       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                  PTR_PAR2   0x000061       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-                     PAR3   0x000062       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-               SHORT_PAR3   0x000062       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                  PTR_PAR3   0x000062       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+               SHORT_PAR3   0x000062       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+                     PAR3   0x000062       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                SHORT_PAR4   0x000063       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                  PTR_PAR4   0x000063       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                      PAR4   0x000063       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                SHORT_PAR5   0x000064       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                  PTR_PAR5   0x000064       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                      PAR5   0x000064       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-                 PTR_PAR6   0x000065       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-                     PAR6   0x000065       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                SHORT_PAR6   0x000065       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+                     PAR6   0x000065       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+                 PTR_PAR6   0x000065       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                      PAR7   0x000066       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                  PTR_PAR7   0x000066       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                SHORT_PAR7   0x000066       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                      PAR8   0x000067       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-               SHORT_PAR8   0x000067       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                  PTR_PAR8   0x000067       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+               SHORT_PAR8   0x000067       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                      PAR9   0x000068       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                SHORT_PAR9   0x000068       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                  PTR_PAR9   0x000068       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-                PTR_PAR10   0x000069       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                     PAR10   0x000069       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
               SHORT_PAR10   0x000069       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+                PTR_PAR10   0x000069       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                 PTR_PAR11   0x00006a       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-                    PAR11   0x00006a       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
               SHORT_PAR11   0x00006a       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-                    PAR12   0x00006b       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+                    PAR11   0x00006a       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                 PTR_PAR12   0x00006b       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
               SHORT_PAR12   0x00006b       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-                    PAR13   0x00006c       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+                    PAR12   0x00006b       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                 PTR_PAR13   0x00006c       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
               SHORT_PAR13   0x00006c       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+                    PAR13   0x00006c       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+              SHORT_PAR14   0x00006d       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                 PTR_PAR14   0x00006d       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                     PAR14   0x00006d       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-              SHORT_PAR14   0x00006d       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-                PTR_PAR15   0x00006e       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-                    PAR15   0x00006e       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
               SHORT_PAR15   0x00006e       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-                PTR_PAR16   0x00006f       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+                    PAR15   0x00006e       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+                PTR_PAR15   0x00006e       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
               SHORT_PAR16   0x00006f       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                     PAR16   0x00006f       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-              SHORT_PAR17   0x000070       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+                PTR_PAR16   0x00006f       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                 PTR_PAR17   0x000070       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+              SHORT_PAR17   0x000070       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                     PAR17   0x000070       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-              SHORT_PAR18   0x000071       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                 PTR_PAR18   0x000071       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                     PAR18   0x000071       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+              SHORT_PAR18   0x000071       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
               SHORT_PAR19   0x000072       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                 PTR_PAR19   0x000072       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                     PAR19   0x000072       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
@@ -806,73 +808,73 @@ get_status_transaction_port2   0x00c2da    program     extern C:\Work_Mk\lib4xx\
               SHORT_PAR20   0x000073       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                     PAR20   0x000073       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                     PAR21   0x000074       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-              SHORT_PAR21   0x000074       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                 PTR_PAR21   0x000074       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+              SHORT_PAR21   0x000074       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+                PTR_PAR22   0x000075       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
               SHORT_PAR22   0x000075       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                     PAR22   0x000075       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-                PTR_PAR22   0x000075       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
               SHORT_PAR23   0x000076       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-                PTR_PAR23   0x000076       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                     PAR23   0x000076       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-                    PAR24   0x000077       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-              SHORT_PAR24   0x000077       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+                PTR_PAR23   0x000076       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                 PTR_PAR24   0x000077       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+              SHORT_PAR24   0x000077       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+                    PAR24   0x000077       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                 PTR_PAR25   0x000078       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                     PAR25   0x000078       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
               SHORT_PAR25   0x000078       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                     PAR26   0x000079       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-                PTR_PAR26   0x000079       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
               SHORT_PAR26   0x000079       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-                    PAR27   0x00007a       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+                PTR_PAR26   0x000079       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                 PTR_PAR27   0x00007a       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+                    PAR27   0x00007a       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
               SHORT_PAR27   0x00007a       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                     PAR28   0x00007b       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-              SHORT_PAR28   0x00007b       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                 PTR_PAR28   0x00007b       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-              SHORT_PAR29   0x00007c       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+              SHORT_PAR28   0x00007b       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                 PTR_PAR29   0x00007c       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                     PAR29   0x00007c       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-                    PAR30   0x00007d       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+              SHORT_PAR29   0x00007c       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                 PTR_PAR30   0x00007d       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+                    PAR30   0x00007d       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
               SHORT_PAR30   0x00007d       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-                    PAR31   0x00007e       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-              SHORT_PAR31   0x00007e       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                 PTR_PAR31   0x00007e       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+              SHORT_PAR31   0x00007e       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+                    PAR31   0x00007e       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
+              SHORT_PAR32   0x00007f       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                     PAR32   0x00007f       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                 PTR_PAR32   0x00007f       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-              SHORT_PAR32   0x00007f       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
-                   mb_adr   0x000c00       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
        __get_modbus_reg:0   0x000c00       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                  ptr_buf   0x000c02       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                   mb_adr   0x000c00       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
        __get_modbus_reg:1   0x000c02       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                  ptr_buf   0x000c02       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                       num   0x000c04       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
        __get_modbus_reg:2   0x000c04       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                   mb_adr   0x000c05       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
        __set_modbus_reg:0   0x000c05       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-       __set_modbus_reg:1   0x000c07       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                   mb_adr   0x000c05       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                   ptr_buf   0x000c07       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                      num   0x000c09       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+       __set_modbus_reg:1   0x000c07       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
        __set_modbus_reg:2   0x000c09       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-             __swap_reg:0   0x000c0a       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                      num   0x000c09       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                   ptr_buf   0x000c0a       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+             __swap_reg:0   0x000c0a       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                       num   0x000c0c       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
              __swap_reg:1   0x000c0c       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                    mb_adr   0x000c0d       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
        __get_modbus_bit:0   0x000c0d       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                  ptr_buf   0x000c0f       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
        __get_modbus_bit:1   0x000c0f       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                  ptr_buf   0x000c0f       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                       num   0x000c11       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
        __get_modbus_bit:2   0x000c11       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                    mb_adr   0x000c12       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
        __set_modbus_bit:0   0x000c12       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-       __set_modbus_bit:1   0x000c14       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                   ptr_buf   0x000c14       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                      num   0x000c16       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+       __set_modbus_bit:1   0x000c14       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
        __set_modbus_bit:2   0x000c16       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                  ptr_buf   0x000c17       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                      num   0x000c16       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
    __get_operative_time:0   0x000c17       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-   __set_operative_time:0   0x000c19       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                  ptr_buf   0x000c17       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                   ptr_buf   0x000c19       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+   __set_operative_time:0   0x000c19       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                     s_val   0x000c1b       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
    __set_powersafe_reg3:0   0x000c1b       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
    __set_powersafe_reg4:0   0x000c1d       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
@@ -881,31 +883,31 @@ get_status_transaction_port2   0x00c2da    program     extern C:\Work_Mk\lib4xx\
                    mb_adr   0x000c1f       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
   __set_record_to_arhiv:1   0x000c21       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                 data_type   0x000c21       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                      num   0x000c22       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
   __set_record_to_arhiv:2   0x000c22       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-            __iee2mcflo:0   0x000c23       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+                      num   0x000c22       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                       val   0x000c23       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+            __iee2mcflo:0   0x000c23       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                       val   0x000c27       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
             __mcflo2iee:0   0x000c27       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
            __open_port1:0   0x000c2b       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
            ptr_PortHeader   0x000c2b       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                      Temp   0x000c2d       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-           ptr_PortHeader   0x000c2e       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
  __get_ptr_buffer_port1:0   0x000c2e       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+           ptr_PortHeader   0x000c2e       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                      Temp   0x000c30       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
 __begin_transaction_port1:0   0x000c31       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
            ptr_PortHeader   0x000c31       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-           ptr_PortHeader   0x000c33       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
 __get_status_transaction_port1:0   0x000c33       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+           ptr_PortHeader   0x000c33       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                      Temp   0x000c35       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-           __open_port2:0   0x000c36       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
            ptr_PortHeader   0x000c36       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+           __open_port2:0   0x000c36       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                      Temp   0x000c38       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-           ptr_PortHeader   0x000c39       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
  __get_ptr_buffer_port2:0   0x000c39       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+           ptr_PortHeader   0x000c39       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                      Temp   0x000c3b       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-__begin_transaction_port2:0   0x000c3c       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
            ptr_PortHeader   0x000c3c       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
+__begin_transaction_port2:0   0x000c3c       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
            ptr_PortHeader   0x000c3e       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
 __get_status_transaction_port2:0   0x000c3e       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                      Temp   0x000c40       data     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
@@ -913,8 +915,8 @@ __get_status_transaction_port2:0   0x000c3e       data     extern C:\Work_Mk\lib
                      temp   0x000c47       data     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
                  ptr_byte   0x000c48       data     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
               STACK_BEGIN   0x000e00       data     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST_Vectors.asm
-                   RCSTA2   0x000f6b       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                RCSTA2bits   0x000f6b       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+                   RCSTA2   0x000f6b       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                TXSTA2bits   0x000f6c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                    TXSTA2   0x000f6c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                    TXREG2   0x000f6d       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
@@ -922,16 +924,16 @@ __get_status_transaction_port2:0   0x000c3e       data     extern C:\Work_Mk\lib
                    SPBRG2   0x000f6f       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                   CCP5CON   0x000f70       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
               CCP5CONbits   0x000f70       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
-                    CCPR5   0x000f71       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                    CCPR5L   0x000f71       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+                    CCPR5   0x000f71       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                    CCPR5H   0x000f72       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
               CCP4CONbits   0x000f73       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                   CCP4CON   0x000f73       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                    CCPR4L   0x000f74       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                     CCPR4   0x000f74       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                    CCPR4H   0x000f75       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
-                T4CONbits   0x000f76       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                     T4CON   0x000f76       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+                T4CONbits   0x000f76       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                       PR4   0x000f77       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                      TMR4   0x000f78       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                     PORTA   0x000f80       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
@@ -940,8 +942,8 @@ __get_status_transaction_port2:0   0x000c3e       data     extern C:\Work_Mk\lib
                 PORTBbits   0x000f81       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                     PORTC   0x000f82       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                 PORTCbits   0x000f82       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
-                    PORTD   0x000f83       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                 PORTDbits   0x000f83       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+                    PORTD   0x000f83       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                 PORTEbits   0x000f84       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                     PORTE   0x000f84       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                 PORTFbits   0x000f85       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
@@ -954,10 +956,10 @@ __get_status_transaction_port2:0   0x000c3e       data     extern C:\Work_Mk\lib
                  LATBbits   0x000f8a       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                      LATC   0x000f8b       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                  LATCbits   0x000f8b       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
-                     LATD   0x000f8c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                  LATDbits   0x000f8c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
-                 LATEbits   0x000f8d       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+                     LATD   0x000f8c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                      LATE   0x000f8d       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+                 LATEbits   0x000f8d       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                      LATF   0x000f8e       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                  LATFbits   0x000f8e       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                      LATG   0x000f8f       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
@@ -979,13 +981,13 @@ __get_status_transaction_port2:0   0x000c3e       data     extern C:\Work_Mk\lib
                     TRISD   0x000f95       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                 TRISDbits   0x000f95       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                     TRISE   0x000f96       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
-                TRISEbits   0x000f96       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                  DDREbits   0x000f96       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                      DDRE   0x000f96       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+                TRISEbits   0x000f96       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                  DDRFbits   0x000f97       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+                     DDRF   0x000f97       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                 TRISFbits   0x000f97       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                     TRISF   0x000f97       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
-                     DDRF   0x000f97       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                      DDRG   0x000f98       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                  DDRGbits   0x000f98       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                 TRISGbits   0x000f98       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
@@ -998,29 +1000,29 @@ __get_status_transaction_port2:0   0x000c3e       data     extern C:\Work_Mk\lib
                      IPR1   0x000f9f       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                      PIE2   0x000fa0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                  PIE2bits   0x000fa0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
-                     PIR2   0x000fa1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                  PIR2bits   0x000fa1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
-                 IPR2bits   0x000fa2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                      IPR2   0x000fa2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
-                 PIE3bits   0x000fa3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                      PIE3   0x000fa3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+                 PIE3bits   0x000fa3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                  PIR3bits   0x000fa4       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                      PIR3   0x000fa4       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                      IPR3   0x000fa5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                  IPR3bits   0x000fa5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
-               EECON1bits   0x000fa6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                    EECON1   0x000fa6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                    EECON2   0x000fa7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                    EEDATA   0x000fa8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                     EEADR   0x000fa9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                    EEADRH   0x000faa       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                     RCSTA   0x000fab       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+                   RCSTA1   0x000fab       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                 RCSTAbits   0x000fab       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                RCSTA1bits   0x000fab       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
-                   RCSTA1   0x000fab       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+               TXSTA1bits   0x000fac       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                    TXSTA1   0x000fac       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                     TXSTA   0x000fac       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
-               TXSTA1bits   0x000fac       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                 TXSTAbits   0x000fac       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                    TXREG1   0x000fad       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                     TXREG   0x000fad       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
@@ -1042,8 +1044,8 @@ __get_status_transaction_port2:0   0x000c3e       data     extern C:\Work_Mk\lib
                     CCPR3   0x000fb8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                    CCPR3L   0x000fb8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                    CCPR3H   0x000fb9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
-              CCP2CONbits   0x000fba       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                   CCP2CON   0x000fba       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+              CCP2CONbits   0x000fba       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                     CCPR2   0x000fbb       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                    CCPR2L   0x000fbb       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                    CCPR2H   0x000fbc       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
