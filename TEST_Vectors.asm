@@ -102,7 +102,7 @@ usapp_zone
 
 ID_User_App
 ;«десь записываетс€ верси€ приложени€ пользовател€
-	db	"TEST 0.1",H'00'
+	db	"TEST 0.2",H'00'
 
 EE_Id_Vect	Code	H'F00014'
 

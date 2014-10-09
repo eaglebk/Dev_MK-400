@@ -28,15 +28,9 @@ void C_PROJECT1()
 	struct PortHeader Port1;
 	unsigned char	temp,*ptr_byte;
 
-if (!open_port1(&Port1))
-		{
-		//Обработка неудачного открытия порта
-
-		close_port1();
-		return;
-		}
-
-ptr_byte=Port1.PtrPort;
+		if (open_port1(&Port1))
+		{	
+	ptr_byte=Port1.PtrPort;
 	*ptr_byte++=0x0A;		//Адрес Slave
 	*ptr_byte++=0x03;		//Номер функции
 	*ptr_byte++=0x00;		//Адрес
@@ -44,29 +38,27 @@ ptr_byte=Port1.PtrPort;
 	*ptr_byte++=0x00;		//Количество
 	*ptr_byte++=0x10;
 	Port1.StatusPort = 0x00;	//ModBus-запрос
-	Port1.CountByte = 0x06; //Количество байт для
-				// передачи
+	Port1.CountByte = 0x06; //Количество байт для передачи
 	Port1.TOPort = 100;		//Таймаут для данного запроса
 	//Запуск транзакции
-	if (begin_transaction_port1(&Port1) == 0xFF)
-		{
-		//Обработка неудачного запуска
-		//транзакции
-		close_port1();
-		return;
-
-		}
-	
-while ((temp=get_status_transaction_port1(&Port1)) == 0x06);
-	if (temp == 0xFF)
+		if (begin_transaction_port1(&Port1) == 0xFF)
+			{
+			//Обработка неудачного запуска транзакции
+			close_port1();
+			return;
+			}
+		
+	while ((temp=get_status_transaction_port1(&Port1)) == 0x06);
+		if (temp == 0xFF)
 		{
 		//Обработка отказа порта
-
 		close_port1();
 		return;
-
 		}
-
-	close_port1();
-	return;
+		}
+		else
+			{
+			close_port1();
+			return;
+			}
 	}
