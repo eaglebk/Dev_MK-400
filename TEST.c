@@ -33,6 +33,7 @@ if (!open_port1(&Port1))
 		//Обработка неудачного открытия порта
 
 		close_port1();
+		return;
 		}
 
 ptr_byte=Port1.PtrPort;
@@ -52,6 +53,7 @@ ptr_byte=Port1.PtrPort;
 		//Обработка неудачного запуска
 		//транзакции
 		close_port1();
+		return;
 
 		}
 	
@@ -61,10 +63,10 @@ while ((temp=get_status_transaction_port1(&Port1)) == 0x06);
 		//Обработка отказа порта
 
 		close_port1();
+		return;
 
 		}
 
 	close_port1();
-
-
+	return;
 	}

@@ -1,5 +1,5 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Wed Oct 08 18:31:06 2014
+Linker Map File - Created Thu Oct 09 11:57:56 2014
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -46,12 +46,12 @@ Linker Map File - Created Wed Oct 08 18:31:06 2014
            US_APP_VECTORS       code   0x00c000    program   0x000026
                    .cinit    romdata   0x00c100    program   0x000002
          .code_OS_Def_C.o       code   0x00c102    program   0x000246
-             .code_TEST.o       code   0x00c348    program   0x0000a6
-                    .code       code   0x00c3ee    program   0x00000e
-      .romdata_OS_Def_C.o    romdata   0x00c3fc    program   0x000000
-      .idata_OS_Def_C.o_i    romdata   0x00c3fc    program   0x000000
-          .romdata_TEST.o    romdata   0x00c3fc    program   0x000000
-          .idata_TEST.o_i    romdata   0x00c3fc    program   0x000000
+             .code_TEST.o       code   0x00c348    program   0x000098
+                    .code       code   0x00c3e0    program   0x00000e
+      .romdata_OS_Def_C.o    romdata   0x00c3ee    program   0x000000
+      .idata_OS_Def_C.o_i    romdata   0x00c3ee    program   0x000000
+          .romdata_TEST.o    romdata   0x00c3ee    program   0x000000
+          .idata_TEST.o_i    romdata   0x00c3ee    program   0x000000
                EE_ID_VECT       code   0xf00014    program   0x000004
                 TEMP_BASE      udata   0x000010       data   0x000020
                 MATH_DATA      udata   0x000030       data   0x000009
@@ -70,9 +70,9 @@ Linker Map File - Created Wed Oct 08 18:31:06 2014
                                Start         End      
                            ---------   ---------      
                             0x00c000    0x00c025      
-                            0x00c100    0x00c3fb      
+                            0x00c100    0x00c3ed      
                             0xf00014    0xf00017      
-            806 out of 131352 program addresses used, program memory utilization is 0%
+            792 out of 131352 program addresses used, program memory utilization is 0%
 
 
 
@@ -129,15 +129,15 @@ SYS_UNLOCK_SHARED_RESOURCE   0x000ca0    program     extern C:\Work_Mk\lib4xx\Us
        ___return_lbl00018   0x00c206    program     static                          
        ___return_lbl00019   0x00c226    program     static                          
                    __pa_0   0x00c304    program     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                   __pa_0   0x00c3da    program     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
+                   __pa_0   0x00c3cc    program     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
                    __pa_1   0x00c312    program     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-                   __pa_1   0x00c3e6    program     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
+                   __pa_1   0x00c3d8    program     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
                    __pa_2   0x00c32c    program     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                    __pa_3   0x00c33e    program     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-            __zero_memory   0x00c3ee    program     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+            __zero_memory   0x00c3e0    program     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
   begin_transaction_port1   0x00c254    program     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
   begin_transaction_port2   0x00c2c2    program     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
-               clear_loop   0x00c3f4    program     static C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+               clear_loop   0x00c3e6    program     static C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
               close_port1   0x00c292    program     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
               close_port2   0x00c300    program     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
           get_counter10ms   0x00c1c4    program     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
@@ -696,10 +696,10 @@ get_status_transaction_port2   0x00c2da    program     extern C:\Work_Mk\lib4xx\
                    __pa_2   0x00c32c    program     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                    __pa_3   0x00c33e    program     static C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def_C.c
                C_PROJECT1   0x00c348    program     extern D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
-                   __pa_0   0x00c3da    program     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
-                   __pa_1   0x00c3e6    program     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
-            __zero_memory   0x00c3ee    program     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
-               clear_loop   0x00c3f4    program     static C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+                   __pa_0   0x00c3cc    program     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
+                   __pa_1   0x00c3d8    program     static D:\Kostya\dev\workspace\electronic\MPLAB\TEST.c
+            __zero_memory   0x00c3e0    program     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
+               clear_loop   0x00c3e6    program     static C:\MCC18\SRC\TRADIT~1\PROC\p18f6720.asm
                     TEMP1   0x000010       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                     TEMP2   0x000011       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
                     TEMP3   0x000012       data     extern C:\Work_Mk\lib4xx\UsApp_Lib\Source\OS_Def.asm
